@@ -1,5 +1,5 @@
 import streamlit as st
-from ydata_profiling import ProfileReport
+
 # st.set_page_config(layout='wide')
 # Set page configuration
 st.set_page_config(page_title="My App", layout="wide")#centered
