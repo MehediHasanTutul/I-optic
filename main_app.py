@@ -40,18 +40,7 @@ st.markdown(
 )
 
 
-col1, col2, col3 = st.columns(3)
-col21, col22, col23 = st.columns(3)
-with col1:
-    st.button('0')
-with col2:
-    st.button('1')
-with col21:
-    st.button('0')
-with col22:
-    st.button('1')
-    import streamlit as st
-from PIL import Image
+
 
 
 
