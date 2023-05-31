@@ -37,19 +37,19 @@ with col1:
     st.radio(
         "Reduced mussle mass 🧍‍♀️",
         ["Yes", "No" ],
-        key="visibility",
+        
         horizontal=True,
     )
     st.radio(
         "Inflamation 🧍‍♀️",
         ["Yes", "No" ],
-        key="visibility",
+      
         horizontal=True,
     )
     st.radio(
         "Gender 🧍‍♀️",
         ["Yes", "No" ],
-        key="visibility",
+       
         horizontal=True,
     )
 
