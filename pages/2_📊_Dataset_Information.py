@@ -1,8 +1,6 @@
 import streamlit as st
-from ydata_profiling import ProfileReport
-import pandas as pd
-import numpy as np
-from streamlit_pandas_profiling import st_profile_report
+
+
 
 st.set_page_config(page_title="My App", layout="wide")#centered
 
