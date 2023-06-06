@@ -11,7 +11,6 @@ st.title("Welcome to My App")
 st.markdown(
     """
     <style>
-    #MainMenu {visibility: hidden;}
         
         div[data-testid="column"]:nth-of-type(1)
         {
