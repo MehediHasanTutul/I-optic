@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import shap
+
 import matplotlib.pyplot as plt
 st.set_page_config(page_title="My App", layout="wide")#centered
 
@@ -130,7 +130,7 @@ else:
     st.success("Predicted status after 1 year:**Alive**")
 
 
-
+import shap
 @st.cache
 def create_explainer(loaded_model):
     explainer = shap.TreeExplainer(loaded_model) 
