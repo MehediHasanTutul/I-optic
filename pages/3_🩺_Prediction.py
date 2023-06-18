@@ -143,7 +143,7 @@ def show_shap(df):
     shap.initjs()
 
     fig, ax = plt.subplots()
-    shap.plots.waterfall(shap_values[0][:,1])
+    shap.plots.waterfall(shap_values[0][:,1],matplotlib=True, show=False)
     st.pyplot(fig)
 with st.expander("See feature importance"):
     
