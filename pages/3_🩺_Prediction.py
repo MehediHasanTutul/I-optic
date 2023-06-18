@@ -130,7 +130,7 @@ else:
     st.success("Predicted status after 1 year:**Alive**")
 
 
-import shap
+
 @st.cache
 def create_explainer(loaded_model):
     explainer = shap.TreeExplainer(loaded_model) 
@@ -146,4 +146,5 @@ def show_shap(df):
     shap.plots.waterfall(shap_values[0][:,1])
     st.pyplot(fig)
 with st.expander("See feature importance"):
+    import shap
     show_shap(df)
