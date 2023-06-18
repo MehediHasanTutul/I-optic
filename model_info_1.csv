@@ -1,0 +1,2 @@
+method,No of Tress,Criterion,Max depth
+Random Forest,10,log_loss,3
