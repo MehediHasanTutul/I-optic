@@ -123,7 +123,7 @@ else:
 # load the model from disk
 loaded_model = pickle.load(open(filename, 'rb'))
 # pred = loaded_model.predict(df.values)
-pred = loaded_model.predict_proba(df)
+pred = loaded_model.predict_proba(df.values)
 st.markdown("============================")
 if pred.argmax()==0:
     st.error(f"Predicted status after 1 year : **Deceased** (with {float(pred.max()*100):.2f}% probability)")
