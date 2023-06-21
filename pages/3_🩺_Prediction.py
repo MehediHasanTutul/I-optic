@@ -3,7 +3,10 @@ import pandas as pd
 import pickle
 
 import matplotlib.pyplot as plt
-st.set_page_config(page_title="My App", layout="wide")#centered
+
+
+st.set_page_config(page_title="I-OPTIC PROJECT", layout="wide")#centered
+st.markdown("<h2 style='text-align: center'>Patient Status Prediction</h2>", unsafe_allow_html=True)
 
 
 # st.markdown('''<style>
