@@ -135,21 +135,21 @@ else:
 
 
 
-import shap
-@st.cache
-def create_explainer(loaded_model):
-    explainer = shap.TreeExplainer(loaded_model) 
-    return explainer
+# import shap
+# @st.cache
+# def create_explainer(loaded_model):
+#     explainer = shap.TreeExplainer(loaded_model) 
+#     return explainer
 
-def show_shap(df):
-    explainer = create_explainer(loaded_model)
-    shap_values = explainer(df)
+# def show_shap(df):
+#     explainer = create_explainer(loaded_model)
+#     shap_values = explainer(df)
 
-    shap.initjs()
+#     shap.initjs()
 
-    fig, ax = plt.subplots()
-    shap.plots.waterfall(shap_values[0][:,1])
-    st.pyplot(fig)
-with st.expander("See feature importance"):
+#     fig, ax = plt.subplots()
+#     shap.plots.waterfall(shap_values[0][:,1])
+#     st.pyplot(fig)
+# with st.expander("See feature importance"):
     
-    show_shap(df)
+#     show_shap(df)
