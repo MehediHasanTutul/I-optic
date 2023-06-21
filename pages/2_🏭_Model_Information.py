@@ -4,6 +4,14 @@ from PIL import Image
 import pandas as pd
 
 st.set_page_config(page_title="I-OPTIC PROJECT", layout="wide")#centered
+st.markdown(
+     """
+     <style>
+     #MainMenu {visibility: hidden;}
+     footer {visibility: hidden;}
+        </style>
+        """,
+        unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center'>Model Information</h2>", unsafe_allow_html=True)
 
 col1,col2=st.columns([1,5])
