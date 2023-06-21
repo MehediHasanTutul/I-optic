@@ -35,7 +35,7 @@ st.markdown("<h2 style='text-align: center'>Patient Status Prediction</h2>", uns
 
 inputs = []
 col31, col32 = st.columns(2)
-st.markdown('**Set inputs:**')
+st.markdown('Set inputs:')
 col1, col2,col3,col4 = st.columns(4)
 
 col5, col6, col7,col8 = st.columns(4)
