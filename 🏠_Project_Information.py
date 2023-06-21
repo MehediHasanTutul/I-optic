@@ -6,5 +6,13 @@ st.set_page_config(
     # page_icon=im,
     layout="wide",
 )
+st.markdown(
+     """
+     <style>
+     #MainMenu {visibility: hidden;}
+     footer {visibility: hidden;}
+        </style>
+        """,
+        unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center'>Project Information</h2>", unsafe_allow_html=True)
 st.markdown('**Basic information about the project** ')
