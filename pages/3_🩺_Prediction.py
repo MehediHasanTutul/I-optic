@@ -63,7 +63,7 @@ with col1:
     
 with col2:
     inputs.append(st.radio(
-        "Gender 🧍‍♀️",
+        "Sex 🧍‍♀️",
         ["Female", "Male" ],
         
         horizontal=True,
