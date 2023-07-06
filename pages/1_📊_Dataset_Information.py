@@ -45,6 +45,13 @@ with col2:
     with open(html_file, 'r') as f:
         html_content = f.read()
 
-    # Render HTML in the first column
-    st.components.v1.html(html_content, width=800, height=600, scrolling=True)
-
+   # Render HTML in the first column
+    with st.expander('Data Information'):
+        st.markdown(f"<h4 style='text-align: left'>Victorian Cancer Malnutrition Collaborative dataset</h4>", unsafe_allow_html=True)
+        st.markdown('Number of participants contributing data: 2,492')
+        st.markdown('The Victorian Cancer Malnutrition Collaborative dataset originates from Peter MacCallum Cancer Center in Melbourne, Australia. Participants include those with various cancer types. The study purpose was to determine the prevalence of malnutrition and associations between malnutrition and 30-day mortality, admission, or re-admission among Australian adults receiving treatment for cancer across multiple public and private healthcare services. ')
+        st.markdown('Measures used to estimate GLIM criteria: ')
+    
+    
+    with st.expander('Data statistics'):
+        st.components.v1.html(html_content, width=800, height=600, scrolling=True)
